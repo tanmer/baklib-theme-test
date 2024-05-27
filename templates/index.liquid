@@ -1,0 +1,30 @@
+
+<div class="">
+
+  <div class="relative flex flex-col max-w-5xl px-3 mx-auto sm:flex-row sm:space-x-2 sm:px-0">
+    <div class="w-full mt-12 space-y-2 lg:space-y-4">
+      {% assign pages = site.pages['/'].pages_in_list %}
+      {% paginate_tag pages, per: 4 %}
+        {% for page in pages %}
+          {% render "card", page: page %}
+        {% else %}
+          {% assign empty_i18n = "empty.name" | t %}
+          {% render 'empty', message: empty_i18n %}
+        {% endfor %}
+        {% render 'paginate', paginate: paginate %}
+      {% endpaginate_tag %}
+    </div>
+
+    <!-- Sidebar Section -->
+    {% render 'sidebar', site: site %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "首页",
+    "description": "首页的默认风格",
+    "thumb_url": "",
+    "sub_page_templates": ["page"]
+  }
+{% endschema %}

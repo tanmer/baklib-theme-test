@@ -1,0 +1,215 @@
+<div class="p-12 bg-teal-100">
+  <h1 class="text-2xl">测试 site 的变量</h1>
+  <table class="border border-collapse border-slate-400">
+    <tr><td class="border border-slate-300">name</td><td class="border border-slate-300"> site.name </td><td class="bg-white border border-slate-300"> {{ site.name }}</td></tr>
+    <tr><td class="border border-slate-300">language</td><td class="border border-slate-300"> site.language </td><td class="bg-white border border-slate-300"> {{ site.language }}</td></tr>
+    <tr><td class="border border-slate-300">time_zone</td><td class="border border-slate-300"> site.time_zone </td><td class="bg-white border border-slate-300"> {{ site.time_zone }}</td></tr>
+    <tr><td class="border border-slate-300">favicon_url</td><td class="border border-slate-300"> site.favicon_url </td><td class="bg-white border border-slate-300"> {{ site.favicon_url }}</td></tr>
+    <tr><td class="border border-slate-300">password_login_enabled</td><td class="border border-slate-300"> site.password_login_enabled </td><td class="bg-white border border-slate-300"> {{ site.password_login_enabled }}</td></tr>
+    <tr><td class="border border-slate-300">baklib_login_enabled</td><td class="border border-slate-300"> site.baklib_login_enabled </td><td class="bg-white border border-slate-300"> {{ site.baklib_login_enabled }}</td></tr>
+    <tr><td class="border border-slate-300">sso_login_enabled</td><td class="border border-slate-300"> site.sso_login_enabled </td><td class="bg-white border border-slate-300"> {{ site.sso_login_enabled }}</td></tr>
+    <tr><td class="border border-slate-300">settings</td><td class="border border-slate-300"> site.settings </td><td class="bg-white border border-slate-300"> {{ site.settings }}</td></tr>
+    <tr><td class="border border-slate-300">theme_colors_css</td><td class="border border-slate-300"> site.theme_colors_css </td><td class="bg-white border border-slate-300"> {{ primary }}</td></tr>
+    <tr><td class="border border-slate-300">nav_tree_path</td><td class="border border-slate-300"> site.nav_tree_path </td><td class="bg-white border border-slate-300"> {{ site.nav_tree_path }}</td></tr>
+    <tr><td class="border border-slate-300">pages</td><td class="border border-slate-300"> site.pages </td><td class="bg-white border border-slate-300"> {{ site.pages }}</td></tr>
+    <tr><td class="border border-slate-300">pages_in_list</td><td class="border border-slate-300"> site.pages_in_list </td><td class="bg-white border border-slate-300"> {{ site.pages_in_list }}</td></tr>
+    <tr><td class="border border-slate-300">tags</td><td class="border border-slate-300"> site.tags </td><td class="bg-white border border-slate-300"> {{ site.tags }}</td></tr>
+    <tr><td class="border border-slate-300">plugins</td><td class="border border-slate-300"> site.plugins </td><td class="bg-white border border-slate-300"> {{ site.plugins }}</td></tr>
+  </table>
+</div>
+
+<div class="p-12 bg-teal-100">
+  <h1 class="text-2xl">测试 page 的变量</h1>
+  <table class="border border-collapse border-slate-400">
+    <tr><td class="border border-slate-300">id</td><td class="border border-slate-300"> page.id </td><td class="bg-white border border-slate-300"> {{ page.id }}</td></tr>
+    <tr><td class="border border-slate-300">slug</td><td class="border border-slate-300"> page.slug </td><td class="bg-white border border-slate-300"> {{ page.slug }}</td></tr>
+    <tr><td class="border border-slate-300">link_text</td><td class="border border-slate-300"> page.link_text </td><td class="bg-white border border-slate-300"> {{ page.link_text }}</td></tr>
+    <tr><td class="border border-slate-300">path</td><td class="border border-slate-300"> page.path </td><td class="bg-white border border-slate-300"> {{ page.path }}</td></tr>
+    <tr><td class="border border-slate-300">url</td><td class="border border-slate-300"> page.url </td><td class="bg-white border border-slate-300"> {{ page.url }}</td></tr>
+    <tr><td class="border border-slate-300">visits_count</td><td class="border border-slate-300"> page.visits_count </td><td class="bg-white border border-slate-300"> {{ page.visits_count }}</td></tr>
+    <tr><td class="border border-slate-300">edited_at</td><td class="border border-slate-300"> page.edited_at </td><td class="bg-white border border-slate-300"> {{ page.edited_at }} {</td></tr>
+    <tr><td class="border border-slate-300">published_at</td><td class="border border-slate-300"> page.published_at </td><td class="bg-white border border-slate-300"> {{ page.published_at }}</td></tr>
+    <tr><td class="border border-slate-300">seo_image_url</td><td class="border border-slate-300"> page.seo_image_url </td><td class="bg-white border border-slate-300"> {{ page.seo_image_url }}</td></tr>
+    <tr><td class="border border-slate-300">seo_title</td><td class="border border-slate-300"> page.seo_title </td><td class="bg-white border border-slate-300"> {{ page.seo_title }}</td></tr>
+    <tr><td class="border border-slate-300">seo_keywords</td><td class="border border-slate-300"> page.seo_keywords </td><td class="bg-white border border-slate-300"> {{ page.seo_keywords }}</td></tr>
+    <tr><td class="border border-slate-300">seo_description</td><td class="border border-slate-300"> page.seo_description </td><td class="bg-white border border-slate-300"> {{ page.seo_description }}</td></tr>
+    <tr><td class="border border-slate-300">settings</td><td class="border border-slate-300"> page.settings </td><td class="bg-white border border-slate-300"> {{ page.settings }}</td></tr>
+    <tr><td class="border border-slate-300">author</td><td class="border border-slate-300"> page.author </td><td class="bg-white border border-slate-300"> {{ page.author }}</td></tr>
+    <tr><td class="border border-slate-300">parent</td><td class="border border-slate-300"> page.parent </td><td class="bg-white border border-slate-300"> {{ page.parent }}</td></tr>
+    <tr><td class="border border-slate-300">children</td><td class="border border-slate-300"> page.children </td><td class="bg-white border border-slate-300"> {{ page.children }}</td></tr>
+    <tr><td class="border border-slate-300">children_in_list</td><td class="border border-slate-300"> page.children_in_list </td><td class="bg-white border border-slate-300"> {{ page.children_in_list }}</td></tr>
+    <tr><td class="border border-slate-300">children_in_nav_menu</td><td class="border border-slate-300"> page.children_in_nav_menu </td><td class="bg-white border border-slate-300"> {{ page.children_in_nav_menu }}</td></tr>
+    <tr><td class="border border-slate-300">pages</td><td class="border border-slate-300"> page.pages </td><td class="bg-white border border-slate-300"> {{ page.pages }}</td></tr>
+    <tr><td class="border border-slate-300">pages_in_list</td><td class="border border-slate-300"> page.pages_in_list </td><td class="bg-white border border-slate-300"> {{ page.pages_in_list }}</td></tr>
+    <tr><td class="border border-slate-300">prev_page</td><td class="border border-slate-300"> page.prev_page </td><td class="bg-white border border-slate-300"> {{ page.prev_page }}</td></tr>
+    <tr><td class="border border-slate-300">next_page</td><td class="border border-slate-300"> page.next_page </td><td class="bg-white border border-slate-300"> {{ page.next_page }}</td></tr>
+    <tr><td class="border border-slate-300">breadcrumb</td><td class="border border-slate-300"> page.breadcrumb </td><td class="bg-white border border-slate-300"> {{ page.breadcrumb }}</td></tr>
+    <tr><td class="border border-slate-300">visitor_posted_feedback</td><td class="border border-slate-300"> page.visitor_posted_feedback </td><td class="bg-white border border-slate-300"> {{ page.visitor_posted_feedback }}</td></tr>
+    <tr><td class="border border-slate-300">last_feedback_emoji</td><td class="border border-slate-300"> page.last_feedback_emoji </td><td class="bg-white border border-slate-300"> {{ page.last_feedback_emoji }}</td></tr>
+    <tr><td class="border border-slate-300">versions</td><td class="border border-slate-300"> page.versions </td><td class="bg-white border border-slate-300"> {{ page.versions }}</td></tr>
+
+  </table>
+</div>
+
+<div class="h-auto min-h-screen overflow-visible bg-slate-150">
+  <div class="relative flex max-w-5xl mx-auto mb-10 space-x-2">
+    <div class="flex-grow w-0 mt-12 space-y-2 lg:space-y-4">
+      <div class="flex ">
+        {% render 'breadcrumb', breadcrumb: page.breadcrumb %}
+      </div>
+
+      <article class="block p-4 overflow-hidden break-all bg-white rounded shadow-md">
+        <div class="flex items-center space-x-2 text-xs font-light shrink-0">
+          {% for tag in page.settings.tags %}
+            <span style="background-color: {{ tag.color }}" class="px-2 py-1 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2">
+              {{ tag.name }}
+            </span>
+          {% endfor %}
+          {% if page.published_at %}
+            <span class="flex items-center justify-center text-sm font-normal text-gray-400">发布于: {{ page.published_at | date: "%Y-%m-%d" }}</span>
+          {% endif %}
+        </div>
+        <h2 class="my-5 text-2xl font-bold leading-7 text-center">
+          {{ page.settings.title }}
+        </h2>
+        <div class="flex flex-col p-6" style="background: {{page.settings.banner_background}}">
+          <code>{{page.settings.banner_background}}</code>
+          <code>degree: {{page.settings.banner_background.degree}}</code>
+          <code>from: {{page.settings.banner_background.from}}</code>
+          <code>to: {{page.settings.banner_background.to}}</code>
+        </div>
+        <div style="color: {{page.settings.text_color}}" class="p-6 text-3xl font-bold text-center">{{page.settings.text_color}}</div>
+        {% if page.settings.thumb_image_url %}
+          <div class="overflow-hidden border rounded">
+            <img class="w-full transition-all duration-500 ease-in-out scale-100 hover:scale-110" src="{{ page.settings.thumb_image_url }}" />
+          </div>
+        {% endif %}
+        <div class="py-4 font-light leading-8 ProseMirror text-slate-700">{{ page.settings.content }}</div>
+
+        {% comment %} feedback form {% endcomment %}
+        {% render "feedback_form", page: page %}
+
+        {% comment %} page children {% endcomment %}
+        <div class="mt-4">
+          {% render "sub_page_list", page: page %}
+        </div>
+      </article>
+    </div>
+
+    <!-- Sidebar Section -->
+    {% render 'sidebar', site: site %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "文章页面",
+    "description": "文章页面模板",
+    "sub_page_templates": ["page"],
+    "thumb_url": "images/logo.svg",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "placeholder": "",
+        "label": "标题",
+        "required": true,
+        "info": "显示在正文上方的文章标题"
+      },
+      {
+        "id": "description",
+        "type": "textarea",
+        "label": "摘要"
+      },
+      {
+        "id": "tags",
+        "type": "tag_picker",
+        "multiple": true,
+        "label": "标签"
+      },
+      {
+        "id": "thumb_image_url",
+        "type": "image_picker",
+        "ratio": "4:1",
+        "width": 640,
+        "label": "封面图"
+      },
+      {
+        "id": "text_color",
+        "type": "color",
+        "label": "文字颜色"
+      },
+      {
+        "id": "banner_background",
+        "label": "Banner 背景色",
+        "type": "color_background"
+      },
+      {
+        "id": "gender",
+        "label": "性别",
+        "type": "radio",
+        "default": "0",
+        "choices": [
+          {
+            "label": "保密",
+            "value": "0"
+          },
+          {
+            "label": "男",
+            "value": "1"
+          },
+          {
+            "label": "女",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "id": "city",
+        "type": "select",
+        "multiple": true,
+        "label": "城市",
+        "choices": [
+          { "group": "四川省", "label": "成都市", "value": "cd" },
+          { "group": "四川省", "label": "德阳市", "value": "dy" },
+          { "group": "云南省", "label": "昆明市", "value": "km" },
+          { "group": "云南省", "label": "大理市", "value": "dl" }
+        ]
+      },
+      {
+        "id": "hot",
+        "type": "checkbox",
+        "label": "热门"
+      },
+      {
+        "id": "friendly_url",
+        "type": "link",
+        "label": "友情链接",
+        "default": "https://www.baidu.com",
+        "choices": [
+          {
+            "label": "百度",
+            "value": "https://www.baidu.com"
+          },
+          {
+            "label": "谷歌",
+            "value": "https://www.google.com"
+          },
+          {
+            "label": "必应",
+            "value": "https://cn.bing.com"
+          },
+          {
+            "label": "360",
+            "value": "https://www.so.com"
+          }
+        ]
+      },
+      {
+        "id": "content",
+        "type": "richtext",
+        "label": "页面内容"
+      }
+    ]
+  }
+{% endschema %}
